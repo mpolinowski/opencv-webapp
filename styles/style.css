@@ -1,0 +1,131 @@
+/*  ******************* Main App *******************  */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: aliceblue;
+}
+
+.app-body {
+    height: 100vh;
+    display: flex;
+}
+
+.app-header {
+    background-color: slategray;
+    width: 100%;
+    height:75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px 0 9px;
+    box-shadow: 1px 2px 3px -2px dimgray;
+}
+
+.app-header h1 {
+    font-family: 'Roboto', sans-serif
+}
+
+.logo-container {
+    width: 175px;
+    height: 55px;
+    box-shadow: 1px 2px 3px -2px dimgray;
+}
+
+
+/*  ******************* Aside *******************  */
+
+.aside {
+    background-color: slategray;
+    height: 100%;
+    width: 10px;
+}
+
+/*  ******************* Sidebar *******************  */
+
+.side-bar {
+    background-color: whitesmoke;
+    height: 100%;
+    width: 13%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 15px 200px 15px;
+    border-right: 1px solid silver;
+}
+
+.icon-styles {
+    font-weight: normal;
+    font-style: normal;
+    font-size: 55px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  
+}
+
+.circle {
+    height: 75px;
+    width: 75px;
+    background-color: slategray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 1px 2px 3px -2px dimgray;
+}
+
+.circle:hover {
+    box-shadow: 1px 2px 3px -2px darkslateblue;
+    background-color: silver;
+}
+
+.circle:active {
+    box-shadow: 1px 2px 3px -2px white;
+    background-color: whitesmoke;
+}
+
+.icon-styles:active {
+    color: slategray;
+  
+}
+
+/*  ******************* Video Panel *******************  */
+
+.video-panel {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    padding: 7px;
+}
+
+.video-container {
+    width: 1280px;
+    height: 720px;
+    box-shadow: 1px 2px 3px -2px dimgray;
+    background-image: url('../assets/background.avif');
+}
+
+#video-canvas {
+    width: 1280px;
+    height: 720px;
+}
